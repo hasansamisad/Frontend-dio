@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-DIO</title>
+</head>
+
+<body>
+
+    <form name="nome-do-formulario" action="https://example.com/submit" method="POST">
+        <label>Digite aqui: </label><input type="text" name="name" placeholder="Digite seu nome"><br>
+
+        <input type="number" name="age" placeholder="DIgite seu número"> <br>
+
+        <input type="email" name="email" placeholder="Digite seu email"><br>
+
+        <input type="password" name="password" placeholder="Digite sua senha">
+    </form>
+    <p>Atributo <mark>action </mark> na tag form vai falar para onde os dados fornecidos via usuário vão ser mandados,
+        geralmente o endereço do servidor </p>
+    <p>Atributo <mark>method Post</mark> na tag form vai falar como os dados fornecidos via usuário vão ser enviados,
+        geralmente via POST
+        E o <mark>method get </mark>vai falar que os dados vão ser enviados via URL</p>
+    <p>Para senha o metodo get não é bom pois envias os dados para o servidor, ficando explicito a senha</p>
+
+
+    <form action="" method="post">
+        <!--Esses colchetes na frente do opcional serve para quando o cliente escolher os adicionais e enviar ao servidor, a parte backend do progama entender os valores opcional como uma lista ao invés de receber como apenas o valor de 1 variável, se fosse assim o servidor receberia apenas o ultimo valor adicionado a variável opcional-->
+
+        <h3>Quais Opcionais deseja?</h3>
+        <input type="checkbox" name="opcional[]" value="queijo"> +queijo<br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> +calabresa<br>
+        <input type="checkbox" name="opcional[]" value="azeitona">+azeitona <br>
+        <input type="checkbox" name="opcional[]" value="atum"> +atum <br>
+        <p>Input usando <mark>type checkbox</mark></p>
+        <h3>Deseja Borda Recheada?</h3>
+        <!--Se esses input não tivesse o mesmo name de border o usuário poderia escolher ao mesmo tempo borda recheada sim e não-->
+        <input type="radio" name="border" value="sim">sim <br>
+        <input type="radio" name="border" value="não">não
+
+        <p>Input usando <mark>type radio</mark></p>
+    </form>
+</body>
+
+</html>
