@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Position CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background: #fafafa;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .exemplo-object-position {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .exemplo-object-position code {
+            min-width: 160px;
+            background: #f4f4f4;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .exemplo-object-position img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h2>Propriedade Object-Position</h2>
+    <p>
+        A propriedade <strong>object-position</strong> define o alinhamento do conteúdo substituível (como <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, etc.) dentro do seu contêiner, quando o <strong>object-fit</strong> não preenche completamente o espaço ou corta parte do conteúdo.
+    </p>
+
+    <h3>Valor padrão: center</h3>
+    <div class="exemplo-object-position">
+        <p>Centraliza o conteúdo dentro do contêiner.</p>
+        <code>object-position: center;</code>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" style="object-position: center;" alt="Exemplo center">
+    </div>
+
+    <h3>Top Left</h3>
+    <div class="exemplo-object-position">
+        <p>Alinha o conteúdo no canto superior esquerdo do contêiner.</p>
+        <code>object-position: left top;</code>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" style="object-position: left top;" alt="Exemplo left top">
+    </div>
+
+    <h3>Bottom Right</h3>
+    <div class="exemplo-object-position">
+        <p>Alinha o conteúdo no canto inferior direito do contêiner.</p>
+        <code>object-position: right bottom;</code>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" style="object-position: right bottom;" alt="Exemplo right bottom">
+    </div>
+
+    <h3>Valores em porcentagem</h3>
+    <div class="exemplo-object-position">
+        <p>Permite posicionar o conteúdo em qualquer ponto do contêiner usando porcentagens.</p>
+        <code>object-position: 80% 20%;</code>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" style="object-position: 80% 20%;" alt="Exemplo 80% 20%">
+    </div>
+
+    <h3>Valores em pixels</h3>
+    <div class="exemplo-object-position">
+        <p>Também é possível usar valores em pixels para posicionar o conteúdo.</p>
+        <code>object-position: 30px 10px;</code>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" style="object-position: 30px 10px;" alt="Exemplo 30px 10px">
+    </div>
+</body>
+</html>

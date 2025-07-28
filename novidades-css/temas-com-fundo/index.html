@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .titulo-imagem-clip {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: url('imagens/paisagem.webp') center center / cover no-repeat;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Clip
+        <span style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; color: transparent;">Texto com fundo gradiente</span> <br>
+        <span style="background: linear-gradient(to right, green, yellow); -webkit-background-clip: text; color: transparent;">Outro texto com fundo gradiente</span> <br>
+        <span style="background: linear-gradient(to right, purple, pink); -webkit-background-clip: text; color: transparent;">Mais um texto com fundo gradiente</span>
+    </h1>
+    <h2 class="titulo-imagem-clip">Texto com imagem de fundo usando background-clip</h2>
+    <p>Este é um exemplo de como usar o background-clip para aplicar gradientes ao texto. O uso de <code>-webkit-background-clip: text</code> permite que o fundo do texto seja preenchido com um gradiente, tornando-o visualmente interessante.</p>
+    <p>Certifique-se de que o navegador suporte a propriedade <code>-webkit-background-clip</code> para que o efeito seja visível. Este recurso é amplamente suportado em navegadores modernos, mas pode não funcionar em todos os navegadores.</p>
+    <p>A cor do texto tem que estar transparente</p>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exemplo-background-attachment {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .exemplo-background-attachment code {
+            min-width: 180px;
+            background: #f4f4f4;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .exemplo-background-attachment .bg-demo {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .exemplo-background-attachment .bg-scroll {
+            background-image: url('imagem/paisagem.webp');
+            background-attachment: scroll;
+        }
+        .exemplo-background-attachment .bg-fixed {
+            background-image: url('imagem/paisagem.webp');
+            background-attachment: fixed;
+        }
+        .exemplo-background-attachment .bg-local {
+            background-image: url('imagem/paisagem.webp');
+            background-attachment: local;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CSS</h1>
+    <h2>Propriedade Background-Attachment</h2>
+    <p>
+        A propriedade <strong>background-attachment</strong> define como o fundo de um elemento se comporta em relação ao rolar da página. Pode ser fixo, relativo ao viewport ou ao elemento.
+    </p>
+
+    <h3>Valor padrão: scroll</h3>
+    <div class="exemplo-background-attachment">
+        <p>O fundo rola com o conteúdo.</p>
+        <code>background-attachment: scroll;</code>
+        <div class="bg-demo bg-scroll"></div>
+    </div>
+
+    <h3>Fixed</h3>
+    <div class="exemplo-background-attachment">
+        <p>O fundo permanece fixo em relação à janela de visualização.</p>
+        <code>background-attachment: fixed;</code>
+        <div class="bg-demo bg-fixed"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quos officia id ullam, atque sequi neque et, recusandae laboriosam corporis tenetur dolorem totam architecto distinctio velit vero! Ipsam, impedit iusto.</p></div>
+    </div>
+
+    <h3>Local</h3>
+    <div class="exemplo-background-attachment">
+        <p>O fundo rola com o conteúdo do elemento.</p>
+        <code>background-attachment: local;</code>
+        <div class="bg-demo bg-local">
+            <p style="height: 600px; margin: 0; color: #fff; text-shadow: 1px 1px 2px #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora quas dolorum amet eum est delectus cupiditate, laboriosam quisquam quibusdam ex excepturi sunt aliquid molestiae iure tenetur culpa ad assumenda.</p>
+        </div>
+    </div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus officiis officia quaerat, mollitia ab reiciendis illum voluptates dignissimos eum expedita facilis impedit. Culpa minus consectetur blanditiis saepe! Sit, illum voluptatum!local Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium iure vitae? Consectetur nemo autem, iusto hic at ducimus fuga tempora reprehenderit maxime voluptas quae excepturi tenetur pariatur sint! Explicabo?</p>
+</body>
+</html>
