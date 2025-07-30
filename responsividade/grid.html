@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        /* Estilização geral para remover margens e definir fonte */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Configuração do container principal como grid */
+        .grid-container {
+            display: grid; /* Define o layout como grid */
+            grid-template-areas: 
+                "header header header" /* Define as áreas do cabeçalho */
+                "menu main main"       /* Define as áreas do menu e conteúdo principal */
+                "menu content1 content2" /* Define as áreas dos conteúdos 1 e 2 */
+                "menu content3 content3" /* Define as áreas do conteúdo 3 */
+                "footer footer footer"; /* Define as áreas do rodapé */
+            grid-template-columns: 1fr 2fr 2fr; /* Define as proporções das colunas */
+            grid-template-rows: auto auto auto auto auto; /* Define as alturas das linhas */
+            height: 100vh; /* Define a altura total da tela */
+        }
+
+        /* Estilização da área do cabeçalho */
+        .header {
+            grid-area: header; /* Associa esta div à área 'header' */
+            background-color: lightblue; /* Cor de fundo */
+            text-align: center; /* Centraliza o texto */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        /* Estilização da área do menu */
+        .menu {
+            grid-area: menu; /* Associa esta div à área 'menu' */
+            background-color: lightgreen; /* Cor de fundo */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        /* Estilização da área principal */
+        .main {
+            grid-area: main; /* Associa esta div à área 'main' */
+            background-color: lightcoral; /* Cor de fundo */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        /* Estilização da área de conteúdo 1 */
+        .content1 {
+            grid-area: content1; /* Associa esta div à área 'content1' */
+            background-color: lightcyan; /* Cor de fundo */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        /* Estilização da área de conteúdo 2 */
+        .content2 {
+            grid-area: content2; /* Associa esta div à área 'content2' */
+            background-color: beige; /* Cor de fundo */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        /* Estilização da área de conteúdo 3 */
+        .content3 {
+            grid-area: content3; /* Associa esta div à área 'content3' */
+            background-color: plum; /* Cor de fundo */
+            padding: 10px; /* Espaçamento interno */
+        }
+
+        /* Estilização da área do rodapé */
+        .footer {
+            grid-area: footer; /* Associa esta div à área 'footer' */
+            background-color: lightpink; /* Cor de fundo */
+            text-align: center; /* Centraliza o texto */
+            padding: 10px; /* Espaçamento interno */
+        }
+    </style>
+</head>
+<body>
+    <h1>Layouts flexíveis com Grid</h1>
+    <div class="grid-container">
+        <div class="header">header content</div>
+        <div class="menu">
+            <p>Menu 1</p>
+            <p>Menu 2</p>
+            <p>Menu 3</p>
+            <p>Menu 4</p>
+            <p>Menu 5</p>
+        </div>
+        <div class="main">main content</div>
+        <div class="content1">content 1</div>
+        <div class="content2">content 2</div>
+        <div class="content3">content 3</div>
+        <div class="footer">footer content</div>
+    </div>
+</body>
+</html>

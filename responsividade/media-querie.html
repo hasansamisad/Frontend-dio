@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* Estilo padrão para todos os dispositivos */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgray; /* Cor de fundo padrão */
+            color: black; /* Cor do texto padrão */
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            text-align: justify;
+            padding: 10px;
+        }
+
+        /* Media query para dispositivos com largura máxima de 768px (tablets e celulares) */
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: lightblue; /* Cor de fundo para dispositivos menores */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Reduz o tamanho da fonte do título */
+            }
+
+            p {
+                font-size: 0.9em; /* Reduz o tamanho da fonte do texto */
+            }
+        }
+
+        /* Media query para dispositivos com largura mínima de 769px (desktops) */
+        @media screen and (min-width: 769px) {
+            body {
+                background-color: lightgreen; /* Cor de fundo para dispositivos maiores */
+            }
+
+            h1 {
+                font-size: 2em; /* Aumenta o tamanho da fonte do título */
+            }
+
+            p {
+                font-size: 1.2em; /* Aumenta o tamanho da fonte do texto */
+            }
+        }
+
+        /* Media query para dispositivos com orientação paisagem */
+        @media screen and (orientation: landscape) {
+            body {
+                background-color: lightcoral; /* Cor de fundo para dispositivos em paisagem */
+            }
+
+            h1 {
+                color: white; /* Altera a cor do título */
+            }
+        }
+
+        /* Media query para dispositivos com altura máxima de 500px */
+        @media screen and (max-height: 500px) {
+            body {
+                background-color: lightyellow; /* Cor de fundo para telas pequenas */
+            }
+
+            h1 {
+                font-size: 1.2em; /* Reduz o tamanho do título */
+            }
+
+            p {
+                display: none; /* Oculta os parágrafos */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Explorando Media Queries</h1>
+    <p>Este é um exemplo de como usar media queries para criar layouts responsivos e adaptáveis a diferentes tamanhos de tela e orientações.</p>
+</body>
+</html>
