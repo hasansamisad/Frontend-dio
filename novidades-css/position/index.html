@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplos de Position e Z-Index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Exemplos: position e z-index</h1>
+
+  <!-- STATIC (comportamento padrão, sem posicionamento personalizado) -->
+  <div class="static-box">Static (Padrão)</div>
+
+  <!-- RELATIVE (pode mover em relação à posição original) -->
+  <div class="relative-box">Relative (top + left)</div>
+
+  <!-- ABSOLUTE (posicionado em relação ao elemento pai com position: relative) -->
+  <div class="relative-container">
+    <div class="absolute-box">Absolute (dentro do container)</div>
+  </div>
+
+  <!-- FIXED (fica fixo na tela mesmo rolando a página) -->
+  <div class="fixed-box">Fixed (fica na tela)</div>
+
+  <!-- STICKY (mistura de relative/fixed) -->
+  <div class="sticky-box">Sticky (rola até grudar)</div>
+
+  <div class="scroll-space"></div>
+
+  <!-- EXEMPLO DE Z-INDEX -->
+  <div class="quadrado vermelho">z-index: 1</div>
+  <div class="quadrado azul">z-index: 2</div>
+  <div class="quadrado verde">z-index: 3</div>
+
+</body>
+</html>

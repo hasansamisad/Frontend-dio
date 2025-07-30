@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  /* STATIC: comportamento padrão, segue o fluxo normal da página */
+  .static-box {
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  /* RELATIVE: move a caixa sem sair do fluxo da página */
+  .relative-box {
+    position: relative;
+    top: 10px;   /* move 10px para baixo */
+    left: 20px;  /* move 20px para a direita */
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Contêiner com position relative (para servir de referência ao absolute) */
+  .relative-container {
+    position: relative;
+    height: 150px;
+    border: 2px dashed gray;
+    margin: 30px 0;
+  }
+  
+  /* ABSOLUTE: posicionado em relação ao contêiner pai com position: relative */
+  .absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: coral;
+    padding: 10px;
+  }
+  
+  /* FIXED: fica fixo na posição da tela mesmo rolando */
+  .fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: lightgreen;
+    padding: 10px;
+    z-index: 999; /* muito alto para garantir que fica por cima */
+  }
+  
+  /* STICKY: rola normalmente até um ponto, depois fixa */
+  .sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: gold;
+    padding: 10px;
+    border: 1px solid #333;
+    margin-top: 40px;
+  }
+  
+  /* Espaço extra para testar scroll */
+  .scroll-space {
+    height: 1000px;
+  }
+  
+  /* Z-INDEX: elementos sobrepostos */
+  .quadrado {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    opacity: 0.8;
+  }
+  
+  .vermelho {
+    background-color: red;
+    z-index: 1;
+  }
+  
+  .azul {
+    background-color: blue;
+    left: 100px;
+    z-index: 2;
+  }
+  
+  .verde {
+    background-color: green;
+    left: 150px;
+    z-index: 3;
+  }
+  
