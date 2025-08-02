@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Grid CSS</title>
+  <style>
+    /* Container principal usando Grid */
+    .grid-container {
+      display: grid; /* Ativa o Grid Layout */
+      grid-template-columns: 1fr 2fr 1fr; /* Define 3 colunas: 1 parte, 2 partes, 1 parte */
+      grid-template-rows: auto auto; /* 2 linhas com altura automática */
+      gap: 10px; /* Espaço entre colunas e linhas */
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    /* Estilo comum para os itens */
+    .grid-item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* Item que ocupa 3 colunas (cabeçalho) */
+    .header {
+      grid-column: 1 / 4; /* Vai da coluna 1 até antes da coluna 4 (ocupa 3 colunas) */
+      background-color: #2196F3;
+    }
+
+    /* Item que ocupa 2 linhas (sidebar esquerda) */
+    .sidebar-left {
+      grid-row: 2 / 4; /* Vai da linha 2 até antes da linha 4 (ocupa 2 linhas) */
+      background-color: #FF5722;
+    }
+
+    /* Item que ocupa 2 colunas (conteúdo principal) */
+    .main-content {
+      grid-column: 2 / 4; /* Vai da coluna 2 até antes da coluna 4 (ocupa 2 colunas) */
+      background-color: #009688;
+    }
+
+    /* Item do rodapé que ocupa as 3 colunas */
+    .footer {
+      grid-column: 1 / 4;
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item header">Cabeçalho</div>
+    <div class="grid-item sidebar-left">Sidebar Esquerda</div>
+    <div class="grid-item main-content">Conteúdo Principal</div>
+    <div class="grid-item footer">Rodapé</div>
+  </div>
+  
+  <a href="mediaqueirie.html">Usando display grid com media queirie</a>
+  <br>
+  <a href="posicionando.html">Posicionando em lugares especificos</a>
+  <br>
+
+    <a href="template-area.html">Usando template area</a>
+
+</body>
+</html>

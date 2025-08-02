@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Responsivo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr; /* Sidebar 1 parte, conteúdo 3 partes */
+      grid-template-rows: auto auto;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .header {
+      grid-column: 1 / 3; /* Ocupa as 2 colunas */
+      background-color: #2196F3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sidebar {
+      background-color: #FF5722;
+      color: white;
+      padding: 20px;
+    }
+
+    .main {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer {
+      grid-column: 1 / 3; /* Ocupa as 2 colunas */
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Media Query para telas menores que 768px (celular/tablet) */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+        grid-template-rows: auto;
+      }
+
+      .header, .sidebar, .main, .footer {
+        grid-column: 1; /* Todos ocupam apenas uma coluna */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="header">Cabeçalho</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Conteúdo Principal</div>
+    <div class="footer">Rodapé</div>
+  </div>
+
+    <a href="index.html">Voltar para o exemplo de Grid CSS</a>  <br>
+    <a href="youtube.html">Youtube</a>
+</body>
+</html>

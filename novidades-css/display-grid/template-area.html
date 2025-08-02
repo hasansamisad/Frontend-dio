@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard com Grid Template Areas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: 200px 1fr; /* Sidebar fixa e conteúdo flexível */
+      grid-template-rows: 60px auto 60px; /* Header, conteúdo, footer */
+      grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+        "sidebar footer";
+      height: 100vh;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #34495e;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #bdc3c7;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "widget1 widget2 widget3"
+        "widget4 widget4 widget5";
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .widget {
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .widget1 { grid-area: widget1; }
+    .widget2 { grid-area: widget2; }
+    .widget3 { grid-area: widget3; }
+    .widget4 { grid-area: widget4; }
+    .widget5 { grid-area: widget5; }
+
+    /* Responsividade Mobile */
+    @media (max-width: 768px) {
+      .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "main"
+          "footer";
+      }
+
+      .main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "widget1"
+          "widget2"
+          "widget3"
+          "widget4"
+          "widget5";
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <p>Links</p>
+      <p>Configurações</p>
+    </div>
+
+    <div class="header">
+      <h1>Dashboard</h1>
+    </div>
+
+    <div class="main">
+      <div class="widget widget1">Widget 1</div>
+      <div class="widget widget2">Widget 2</div>
+      <div class="widget widget3">Widget 3</div>
+      <div class="widget widget4">Widget 4 (Largo)</div>
+      <div class="widget widget5">Widget 5</div>
+    </div>
+
+    <div class="footer">
+      <p>Rodapé</p>
+    </div>
+  </div>
+
+</body>
+</html>
