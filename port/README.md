@@ -1,25 +1,29 @@
-<h1>
-    <a href="https://www.dio.me/">
-     <img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
-    <span>Construindo seu Portfólio Front-end do Zero</span>
-</h1>
+# 🌐 Portfólio - Hasan Sami Sad
 
-Repositório desenvolvido para fins didáticos, com a disponibilização de materiais de apoio para o lab **Construindo seu Portfólio Front-end do Zero** da [Digital Innovation One](https://www.dio.me/).
+Bem-vindo ao meu portfólio! 🚀  
+Este repositório reúne alguns dos projetos que venho desenvolvendo ao longo da minha jornada na área de **Tecnologia da Informação**.
 
-[![Link do Lab](https://img.shields.io/badge/▶-000?style=for-the-badge&logo=movie&logoColor=E94D5F)](https://web.dio.me/lab/construindo-seu-portfolio-front-end-do-zero/learning/81cbe4c1-6e9e-4ce3-be7d-412aef4efb24) 
-[![Link do Lab](https://img.shields.io/badge/Acesse%20o%20Lab%20na%20Plataforma-E94D5F?style=for-the-badge)](https://web.dio.me/lab/construindo-seu-portfolio-front-end-do-zero/learning/81cbe4c1-6e9e-4ce3-be7d-412aef4efb24)
+## ✨ Sobre mim
+Atualmente estou cursando o **2º semestre da faculdade** e sigo em constante evolução.  
+Embora o **desenvolvimento web** seja a área onde tenho mais domínio até o momento, ainda estou explorando diferentes caminhos dentro da tecnologia, me aprofundando em diversas áreas para, no futuro, encontrar aquela em que vou me especializar.
 
-## Objetivo
-Construir seu Primeiro Portfólio Front-end do Zero.
+Meu foco no momento é:
+- 📚 Consolidar a base em **desenvolvimento front-end** (HTML, CSS, JavaScript).  
+- 🧩 Entender conceitos de **back-end, banco de dados e integração de sistemas**.  
+- ☁️ Explorar também outras áreas como **cloud, dados e cibersegurança**, mantendo a mente aberta para novos aprendizados.
 
-## Tecnologias
-[![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript&logoColor=30A3DC)]()
-[![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=E94D5F)]() 
-[![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=30A3DC)]()
-[![Figma](https://img.shields.io/badge/Protótipo%20no%20Figma-000?style=for-the-badge&logo=figma&logoColor=E94D5F)](https://www.figma.com/file/NkndT2SbyHJZWLEsaM8Xn3/DIO-Lab-Portf%C3%B3lio)
+## 📂 Projetos presentes
+Aqui você encontrará:
+- 🖥️ Réplicas de interfaces conhecidas (Discord, YouTube, Wikipedia) para treinar **HTML + CSS + responsividade**.  
+- ⚙️ Exercícios práticos em **JavaScript**.  
+- 📑 Experimentos com **semântica, formulários e boas práticas de front-end**.  
 
-## Desafio: Portfólio Front-end
-Crie seu próprio portfólio front-end, atentando-se para que seja autêntico, visualmente atraente e responsivo. Sinta-se livre para utilizar as tecnologias que desejar e expressar sua personalidade e estilo através do design e dos elementos interativos do seu portfólio. Após concluir, você pode hospedá-lo em uma plataforma de sua escolha, como GitHub Pages, Netlify, Vercel, etc.
+## 🚀 Objetivo
+Este portfólio é meu espaço de prática, registro de aprendizado e evolução.  
+Cada projeto aqui marca um passo na minha trajetória em busca de experiência e definição de qual área da tecnologia será meu foco de especialização.
 
-##
-<div align="center">Feito com 💙 por <a href="https://github.com/elidianaandrade">Eli</a>.</div>
+## 📫 Contato
+Se quiser trocar ideias ou dar feedback sobre meus projetos:  
+- ✉️ **Email**: hasansamisad@gmail.com  
+- 💼 **LinkedIn**: [linkedin.com/in/hasansamisad](https://linkedin.com/in/hasansamisad)  
+- 🐙 **GitHub**: [github.com/hasansamisad](https://github.com/hasansamisad)
