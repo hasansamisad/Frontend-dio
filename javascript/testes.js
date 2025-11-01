@@ -118,6 +118,7 @@ for (let fruta of frutass) {
   console.log("Fruta: " + fruta);
 }
 
+
 // ============================================
 // 7. Vetores (Arrays Simples)
 // ============================================
@@ -189,7 +190,7 @@ for (let item of lista) {
 let numeros = [1, 2, 3, 4, 5];
 
 // map: aplica função a cada item e retorna novo array
-let dobrados = numeros.map(n => n * 2); // [2, 4, 6, 8, 10]
+let dobrados = numeros.map(n => n * 2); // [2, 4, 6, 8, 10]""
 
 // filter: retorna somente itens que passam em uma condição
 let pares = numeros.filter(n => n % 2 === 0); // [2, 4]
@@ -200,3 +201,6 @@ let soma = numeros.reduce((acum, n) => acum + n, 0); // 15
 console.log("Dobrado:", dobrados);
 console.log("Pares:", pares);
 console.log("Soma:", soma);
+
+
+
