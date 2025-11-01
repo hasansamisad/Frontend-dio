@@ -1,0 +1,68 @@
+{
+  "name": "Hasan Sami Sad",
+  "photo": "https://avatars.githubusercontent.com/u/211250318?v=4",
+  "job": "Estudante de TI | Desenvolvedor Web em formação",
+  "location": "Brasil",
+  "phone": "(61) 98561-1418",
+  "email": "hasan.trabalho@gmail.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "HTML5",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/html.png"
+      },
+      {
+        "name": "CSS3",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/css.png"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png"
+      },
+      {
+        "name": "Git & GitHub",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/git.png"
+      }
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Aprendizado Contínuo",
+      "Trabalho em equipe",
+      "Organização",
+      "Resiliência"
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (intermediário)"
+  ],
+  "portfolio": [
+    {
+      "name": "Landing Page - réplica do Discord",
+      "url": "https://github.com/hasansamisad/discord-landing-page",
+      "github": true
+    },
+    {
+      "name": "Jogo YU GI OH estilo Jokenpô",
+      "url": "https://github.com/hasansamisad/YU-GI-OH",
+      "github": true
+    },
+    {
+      "name": "Projetos Frontend DIO",
+      "url": "https://github.com/hasansamisad/Frontend-dio",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Atendente de loja de roupas",
+      "period": "2020 - 2023",
+      "description": "Desenvolvi habilidades de atendimento ao cliente, organização e comunicação, que hoje aplico na área de TI."
+    },
+    {
+      "name": "Estudante de Tecnologia da Informação",
+      "period": "2023 - até o momento",
+      "description": "Cursando graduação em TI. Atualmente aprofundando conhecimentos em desenvolvimento web, mas explorando várias áreas para definir uma especialização."
+    }
+  ]
+}
